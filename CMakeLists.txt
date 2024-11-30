@@ -7,5 +7,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(raytracer VERSION 1.0)
 
 file(GLOB_RECURSE SRC_FILES src/*.cpp)
-add_executable(raytracer main.cpp)
+add_executable(raytracer main.cpp ${SRC_FILES})
 target_include_directories(raytracer PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
